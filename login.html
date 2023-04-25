@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+<body>
+<head>
+<style>
+body {
+  background-image: url(bc.jpeg.jpg);
+}
+</style>
+
+
+</head>
+<body>
+
+<center>
+
+  <h1><font size="8">LOGIN FORM</h1></font><br>
+
+<form onsubmit="return false">
+<br><br>
+         <table>	
+            
+             <tr><td><b><font size="4">USERNAME : </font></b></td>
+             <td><input type="text" name="uname" id="uname"   required="" /></td>
+            </tr>
+           
+            <tr><td><b><font size="4">PASSWORD : </font></b></td>
+            <td><input type="password" id="pass"   required="" /></td>
+            </tr>
+
+            <tr><td>
+            <input type="button" onclick="myFunction()" value="SUBMIT FORM">
+         
+         
+          </td><td>
+            <button>
+          <a href='prediction.html'>
+                  CHECK THE ELIGIBILITY
+                </button>
+            </a>
+            </td></tr>
+           
+         </table>
+         <br><br>
+         
+         
+         
+         
+  </form>
+ 
+  <p id="demo"> </p>
+         <p id="demo1"> </p>
+         <p id="demo2"></p>
+         <p id="demo3"> </p>
+         <p id="demo4"> </p>
+         <p id="demo5"> </p>
+         
+         
+         
+ <script>
+ 
+function myFunction() {
+  var x = document.getElementById("uname").value;
+  document.getElementById("demo").innerHTML = "USERNAME : "+x;
+  var y = document.getElementById("pass").value;
+  document.getElementById("demo1").innerHTML = " PASSWORD:"+y;
+  var z = document.getElementById("Phone").value;
+  document.getElementById("demo2").innerHTML = "Phone: "+ z;
+  var a = document.getElementById("Std").value;
+  document.getElementById("demo3").innerHTML = "Std : "+a;
+  var b = document.getElementById("Gender").value;
+  document.getElementById("demo4").innerHTML = "Gender : "+b;
+  var c = document.getElementById("Gender2").value;
+  document.getElementById("demo5").innerHTML = "Gender   :"+c;
+  alert("Registration Successful...Enjoy Your Day");
+  
+}
+</script>
+</center>
+
+  </body>
+</html>
